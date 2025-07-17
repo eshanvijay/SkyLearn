@@ -1,91 +1,92 @@
 ![Group 23](https://github.com/user-attachments/assets/4e84251a-27b0-462b-bd5e-fb0bcadc4694)
 
-### The world’s most high-end designed, lightweight, and feature-rich learning management system.
+# 🚀 SkyLearn: The Future of Learning Management Systems  
+### The world’s most lightweight, beautifully designed, and feature-packed open-source LMS.
 
-# SkyLearn: Open source learning management system
+---
 
-Learning management system using Django web framework. You might want to develop a learning management system (also known as a school/college management system) for a school/college organization, or simply for the purpose of learning the tech stack and enhancing your portfolio. In either case, this project would be a great way to get started. The aim is to create the world's most lightweight yet feature-rich learning management system. However, this is not possible without your support, so please give it a star ⭐️.
+> **SkyLearn** is a powerful, full-featured Learning Management System built with the Django web framework. Whether you're a developer looking to enhance your portfolio or an institution searching for a reliable LMS solution — **SkyLearn** is designed for both learning and real-world deployment.
 
-_Documentation is under development_
+Our mission is to build the **most intuitive, lightweight, and modern LMS** out there — and we can’t do it without your support.  
+**If you find this project helpful, please consider giving it a ⭐️ on GitHub.**
 
-Let's enhance the project by contributing! 👩‍💻👩‍💻
+> 📚 _Documentation is currently in development._
 
-<img width="1440" alt="screenshot" src="https://github.com/user-attachments/assets/08644f49-6ae0-4695-86cc-afe331c6f61a">
+---
 
-## Current features
+![SkyLearn UI Screenshot](https://github.com/user-attachments/assets/08644f49-6ae0-4695-86cc-afe331c6f61a)
 
-- Dashboard: School demographics and analytics. Restricted to only admins
-- News And Events: All users can access this page
-- Admin manages students(Add, Update, Delete)
-- Admin manages lecturers(Add, Update, Delete)
-- Students can Add and Drop courses
-- Lecturers submit students' scores: _Attendance, Mid exam, Final exam, assignment_
-- The system calculates students' _Total, average, point, and grades automatically_
-- Grade comment for each student with a **pass**, **fail**, or **pass with a warning**
-- Assessment result page for students
-- Grade result page for students
-- Session/year and semester management
-- Assessments and grades will be grouped by semester
-- Upload video and documentation for each course
-- PDF generator for students' registration slip and grade result
-- Page access restriction
-- Storing of quiz results under each user
-- Question order randomization
-- Previous quiz scores can be viewed on the category page
-- Correct answers can be shown after each question or all at once at the end
-- Logged-in users can return to an incomplete quiz to finish it and non-logged-in users can complete a quiz if their session persists
-- The quiz can be limited to one attempt per user
-- Questions can be given a category
-- Success rate for each category can be monitored on a progress page
-- Explanation for each question result can be given
-- Pass marks can be set
-- Multiple choice question type
-- True/False question type
-- Essay question type................._Coming soon_
-- Custom message displayed for those that pass or fail a quiz
-- Custom permission (view_sittings) added, allowing users with that permission to view quiz results from users
-- A marking page which lists completed quizzes, can be filtered by quiz or user, and is used to mark essay questions
+---
 
-# Quick note for future contributors
+## 🎯 Why SkyLearn?
 
-If you would like to contribute, simply begin by implementing one from the list in the `TODO.md` file.
+- Clean and user-friendly interface  
+- Lightweight but powerful feature set  
+- Easy to contribute to — ideal for open-source beginners  
+- Built with Django — robust, scalable, and secure  
+- Ideal for colleges, schools, and educational startups  
 
-# Requirements:
+---
 
-> The following program(s) are required to run the project
+## ✅ Current Features
 
-- [Python3.8+](https://www.python.org/downloads/)
+### 🔐 Admin Panel
+- View school-wide analytics and demographics
+- Add, update, or delete students and lecturers
+- Manage sessions/semesters
+- Control course uploads (videos, docs)
 
-# Installation
+### 🎓 Student Portal
+- Add or drop courses
+- View assessment and grade reports
+- Download registration slip and results as PDFs
 
-- Clone the repo with
+### 👨‍🏫 Lecturer Dashboard
+- Submit scores (attendance, midterm, final exam, assignments)
+- Automated grade calculations (total, average, GPA, etc.)
+- Pass/Fail/Warn comments
+
+### 🧠 Quiz & Assessments
+- Store results per user
+- Randomized question order
+- Resume incomplete quizzes
+- Attempt limits and pass marks
+- MCQ, True/False (Essay coming soon!)
+- Category-wise performance tracking
+- Custom messages based on results
+- Admin marking panel for essay-type questions
+
+---
+
+## 📦 Installation Guide
+
+### Requirements
+- [Python 3.8+](https://www.python.org/downloads/)
+
+### Steps
 
 ```bash
+# 1. Clone the repo
 git clone https://github.com/SkyCascade/SkyLearn.git
-```
 
-- Create and activate a python virtual environment
+# 2. Navigate into the directory
+cd SkyLearn
 
-```bash
+# 3. Create and activate virtual environment (venv)
+python -m venv env
+source env/bin/activate  # For Windows: env\Scripts\activate
+
+# 4. Install dependencies
 pip install -r requirements.txt
-```
 
-- Create `.env` file inside the root directory
+# 5. Create a `.env` file in the root folder and customize it
+cp .env.example .env  # On Windows: manually create .env and paste contents
 
-- Copy and paste everything in the `.env.example` file into the `.env` file. Don't forget to customize the variable values
-
-```bash
+# 6. Apply database migrations
 python manage.py migrate
-```
 
-```bash
+# 7. Create a superuser (admin access)
 python manage.py createsuperuser
-```
 
-```bash
+# 8. Start the server
 python manage.py runserver
-```
-
-Last but not least, go to this address http://127.0.0.1:8000
-
-#### Show your support by ⭐️ this project!
