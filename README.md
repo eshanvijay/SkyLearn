@@ -10,7 +10,7 @@
 Our mission is to build the **most intuitive, lightweight, and modern LMS** out there — and we can’t do it without your support.  
 **If you find this project helpful, please consider giving it a ⭐️ on GitHub.**
 
-> 📚 _Documentation is currently in development._
+
 
 ---
 
