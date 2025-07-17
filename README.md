@@ -1,92 +1,99 @@
-![Group 23](https://github.com/user-attachments/assets/4e84251a-27b0-462b-bd5e-fb0bcadc4694)
-
-# 🚀 SkyLearn: The Future of Learning Management Systems  
-### The world’s most lightweight, beautifully designed, and feature-packed open-source LMS.
+# 🚀 SkyLearn: The Future of College Management Systems  
+*A lightweight, modern, and open-source solution for managing academic institutions.*
 
 ---
 
-> **SkyLearn** is a powerful, full-featured Learning Management System built with the Django web framework. Whether you're a developer looking to enhance your portfolio or an institution searching for a reliable LMS solution — **SkyLearn** is designed for both learning and real-world deployment.
-
-Our mission is to build the **most intuitive, lightweight, and modern LMS** out there — and we can’t do it without your support.  
-**If you find this project helpful, please consider giving it a ⭐️ on GitHub.**
-
-
+> A full-featured, role-based college management system built with Django. Designed for both real-world deployment and developer learning, it supports students, lecturers, and administrators with streamlined workflows and modern UI.
 
 ---
 
-![SkyLearn UI Screenshot](https://github.com/user-attachments/assets/08644f49-6ae0-4695-86cc-afe331c6f61a)
+![UI Screenshot](https://github.com/user-attachments/assets/08644f49-6ae0-4695-86cc-afe331c6f61a)
 
 ---
 
-## 🎯 Why SkyLearn?
+## 🎯 Key Highlights
 
-- Clean and user-friendly interface  
-- Lightweight but powerful feature set  
-- Easy to contribute to — ideal for open-source beginners  
-- Built with Django — robust, scalable, and secure  
-- Ideal for colleges, schools, and educational startups  
+- ✅ Role-based portals: Students, Lecturers, Admins  
+- 🎓 Course enrollment, grade tracking, PDF reports  
+- 📊 Admin dashboard with full control and analytics  
+- 🧪 Built-in quiz & assessment system  
+- 🔐 Secure, scalable, and easily extensible
 
 ---
 
-## ✅ Current Features
+## ✅ Features Overview
 
 ### 🔐 Admin Panel
-- View school-wide analytics and demographics
+- View college-wide analytics and demographics
 - Add, update, or delete students and lecturers
-- Manage sessions/semesters
-- Control course uploads (videos, docs)
+- Manage sessions, semesters, and departments
+- Control course uploads (videos, documents)
 
 ### 🎓 Student Portal
-- Add or drop courses
-- View assessment and grade reports
-- Download registration slip and results as PDFs
+- Enroll/drop courses
+- View assessments, results, and GPA
+- Download results and registration slips as PDF
 
 ### 👨‍🏫 Lecturer Dashboard
-- Submit scores (attendance, midterm, final exam, assignments)
-- Automated grade calculations (total, average, GPA, etc.)
-- Pass/Fail/Warn comments
+- Submit and manage attendance, scores, and final grades
+- Automatic GPA calculations and performance summaries
+- Add comments: Pass/Fail/Warn system
 
-### 🧠 Quiz & Assessments
-- Store results per user
-- Randomized question order
+### 🧠 Quiz & Assessment Module
+- Store quiz results per student
+- Randomized question order for fairness
+- Support for MCQs and True/False (Essay coming soon!)
 - Resume incomplete quizzes
-- Attempt limits and pass marks
-- MCQ, True/False (Essay coming soon!)
-- Category-wise performance tracking
-- Custom messages based on results
-- Admin marking panel for essay-type questions
+- Set attempt limits and pass marks
+- Category-wise performance breakdown
+- Admin review panel for essay questions
+
+---
+
+## 🛠️ Tech Stack
+
+- **Backend:** Django (Python)
+- **Frontend:** HTML, CSS, Bootstrap
+- **Database:** SQLite (default), can be switched to PostgreSQL
+- **Email:** Configurable SMTP support
+- **PDF Generation:** Integrated using report libraries
 
 ---
 
 ## 📦 Installation Guide
 
-### Requirements
-- [Python 3.8+](https://www.python.org/downloads/)
+### ✅ Requirements
+- Python 3.8+
+- pip (Python package installer)
+- Virtualenv (optional but recommended)
 
-### Steps
+### 🧰 Setup Instructions
 
 ```bash
-# 1. Clone the repo
+# 1. Clone the repository
 git clone https://github.com/SkyCascade/SkyLearn.git
 
-# 2. Navigate into the directory
+# 2. Navigate to the project directory
 cd SkyLearn
 
-# 3. Create and activate virtual environment (venv)
+# 3. Create and activate a virtual environment
 python -m venv env
-source env/bin/activate  # For Windows: env\Scripts\activate
+env\Scripts\activate        # On Windows
+# source env/bin/activate   # On macOS/Linux
 
-# 4. Install dependencies
+# 4. Install the dependencies
 pip install -r requirements.txt
 
-# 5. Create a `.env` file in the root folder and customize it
-cp .env.example .env  # On Windows: manually create .env and paste contents
+# 5. Create a `.env` file in the root directory
+# You can copy from the example provided
+# On Windows: manually copy and edit
+# On Unix: cp .env.example .env
 
 # 6. Apply database migrations
 python manage.py migrate
 
-# 7. Create a superuser (admin access)
+# 7. Create a superuser (for admin access)
 python manage.py createsuperuser
 
-# 8. Start the server
+# 8. Start the development server
 python manage.py runserver
